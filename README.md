@@ -1,7 +1,8 @@
 Real Estate App
+by: Tomas Makaj & Thierry Yabre
 
 Project Goal: Create a version of Zillow with real estate displayed from our Backend with the Data we created using
-Active Record,Sinatra and SQLite.
+Ruby Active Record, Sinatra, Postman and SQLite.
 
 We gave each real estate a price, location, details, image and like.
 
