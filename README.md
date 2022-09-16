@@ -17,10 +17,12 @@ In the footer we linked both our GitHub & Linkedin pages.
 
 <img width="1280" alt="Screen Shot 2022-09-16 at 1 18 20 PM" src="https://user-images.githubusercontent.com/108154215/190694250-1e2e2bf8-ff19-4ca2-a1cb-74fdb64a549d.png">
 
-<img width="1280" alt="Screen Shot 2022-09-16 at 1 18 26 PM" src="https://user-images.githubusercontent.com/108154215/190694271-0f3a9630-2649-4f40-895f-060b8d5d3c78.png">
+<img width="1280" alt="Screen Shot 2022-09-16 at 1 37 35 PM" src="https://user-images.githubusercontent.com/108154215/190699768-bd858780-664d-4ce0-882c-eba228e0adf2.png">
 
-<img width="1280" alt="Screen Shot 2022-09-16 at 1 18 29 PM" src="https://user-images.githubusercontent.com/108154215/190694317-320d1103-3089-4a31-b898-af78e035a071.png">
+<img width="1280" alt="Screen Shot 2022-09-16 at 1 37 52 PM" src="https://user-images.githubusercontent.com/108154215/190699794-95586a37-077c-46ed-9dae-bfb1e0ffa924.png">
 
-<img width="1280" alt="Screen Shot 2022-09-16 at 1 18 33 PM" src="https://user-images.githubusercontent.com/108154215/190694334-45031f9f-3814-4843-81d4-c7cab5e1ac3c.png">
+<img width="1280" alt="Screen Shot 2022-09-16 at 1 37 55 PM" src="https://user-images.githubusercontent.com/108154215/190699812-23d084c8-edb5-4a31-b258-f900dd465e01.png">
 
+Down below is our attached Component Tree
 
+<img width="865" alt="screen_shot_2022-09-16_at_1 37 38_pm" src="https://user-images.githubusercontent.com/108154215/190699935-349d58c8-bc11-4fc7-87e8-918de1e16bc6.png">
