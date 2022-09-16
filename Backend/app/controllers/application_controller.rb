@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
 
     post '/houses' do
         house = House.create(
-            price: paramas[:price],
+            price: params[:price],
             detail: params[:detail],
             location: params[:location],
             image: params[:image]
@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
         
         post '/apartments' do
             apartment = Apartment.create(
-                price: paramas[:price],
+                price: params[:price],
                 detail: params[:detail],
                 location: params[:location],
                 image: params[:image]
@@ -35,10 +35,7 @@ class ApplicationController < Sinatra::Base
         patch '/houses/:id' do
             house = House.find(params[:id])
             house.update(
-                price: paramas[:price],
-                detail: params[:detail],
-                location: params[:location],
-                image: params[:image]
+                like: params[:liked]
             )
             house.to_json
         end
@@ -46,10 +43,7 @@ class ApplicationController < Sinatra::Base
         patch '/apartments/:id' do
             apartment = Apartment.find(params[:id])
             apartment.update(
-                price: paramas[:price],
-                detail: params[:detail],
-                location: params[:location],
-                image: params[:image]
+                like: params[:liked]
             )
             apartment.to_json
         end

@@ -5,6 +5,7 @@ class CreateApartments < ActiveRecord::Migration[6.1]
         t.string :detail
         t.string :location
         t.string :image
+        t.boolean :like
     end
   end
 end

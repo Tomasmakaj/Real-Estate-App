@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_09_15_232017) do
     t.string "detail"
     t.string "location"
     t.string "image"
+    t.boolean "like"
   end
 
   create_table "houses", force: :cascade do |t|
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 2022_09_15_232017) do
     t.string "detail"
     t.string "location"
     t.string "image"
+    t.boolean "like"
   end
 
   create_table "owners", force: :cascade do |t|
