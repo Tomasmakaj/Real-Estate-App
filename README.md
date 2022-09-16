@@ -7,7 +7,8 @@ Active Record & Sinatra & SQLite.
 
 rake db:seed created a schema which we used to intergrate our frontend & work with our SQLite
 
-<img width="1074" alt="Screen Shot 2022-09-16 at 1 16 55 PM" src="https://user-images.githubusercontent.com/108154215/190695875-65071654-7e57-4229-81c8-3bd0a2417746.png">
+<img width="392" alt="Screen Shot 2022-09-16 at 1 20 45 PM" src="https://user-images.githubusercontent.com/108154215/190698859-388a7201-2d30-48d4-80c3-690f862b4a68.png">
+
 
 
 Front end created using ReactJs
