@@ -62,3 +62,56 @@
         font-size: 2rem;
     }
 }
+
+#sign-in-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.258);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-in-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#Sign-In-Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10%;
+}
+
+#Sign-In-Form input[type=email]{
+    height: 50px;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    
+}
+
+#Sign-In-Form input[type=password]{
+    height: 50px;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+}
+
+
+
+
+

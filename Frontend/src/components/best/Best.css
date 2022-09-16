@@ -7,6 +7,8 @@
 .best > div {
     display: flex;
     justify-content: center;
+    gap: 1%;
+    margin-top: 2em;
 }
 
 .best > div p {

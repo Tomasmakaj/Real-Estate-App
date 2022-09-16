@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
     end
 
     get'/apartments' do
-        apartments = Apartments.all.order(:price)
+        apartments = Apartment.all.order(:price)
         apartments.to_json
     end
 
@@ -66,5 +66,16 @@ class ApplicationController < Sinatra::Base
         apartment.to_json
     end
 
-    
+    post '/login' do
+        if Owner.all.exists?(email: params[:email])
+            if Owner.find_by_email(params[:email]).password == params[:password]
+                owner == Owner.find_by_email(params[:email])
+                owner.to_json
+            else
+                "In Correct Password"
+            end
+        else
+            "In Correct Email"
+        end
+    end
 end

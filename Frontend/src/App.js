@@ -2,12 +2,15 @@ import React, {useEffect, useState} from 'react'
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero'
 import Best from './components/best/Best'
-// import { Routes, Route } from "react-router-dom"
+import Footer from './components/footer/Footer'
+// import Like from './components/like/Like'
+import { Routes, Route } from "react-router-dom"
 
 function App() {
-  
-  const[house, setHouse] = useState ([])
-  const[apartment, setApartment] = useState ([])
+  const [house, setHouse] = useState ([])
+  const [apartment, setApartment] = useState ([])
+  const [filter, setFilter] = useState("")
+  const [currentOwner, setCurrentOwner] = useState ("")
 
   useEffect(() => {
     fetch("http://localhost:8080/houses")
@@ -21,12 +24,37 @@ function App() {
     .then(data => setApartment(data))
   }, []);
 
+function handleLogin(ownerObject) {
+  setCurrentOwner(ownerObject)
+}
 
+// {currentOwner === "" ? 
+  
     return (
     <div>
-     <Navbar />
-     <Hero />
-     <Best  house={house} apartment={apartment}/>
+     <Navbar handleLogin={handleLogin}/>
+     
+     <Routes>
+      
+        <Route path="/Home">
+        </Route>
+        
+        <Route path="/Portfolio">
+        </Route>
+        
+        <Route exact path="/">
+        </Route>
+     
+     </Routes>
+     
+     <Hero filter={filter} setFilter={setFilter}/>
+     <Best  filter={filter} house={house} apartment={apartment}/>
+
+     {/* <Like /> */}
+     <Footer />
+     {/* <Theme theme={theme === "light" ? lightMode : darkMode }>
+      <div className="Flashlight"></div>
+     </Theme> */}
     </div>
   );
 }

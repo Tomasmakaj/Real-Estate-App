@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_13_155959) do
+ActiveRecord::Schema.define(version: 2022_09_15_232017) do
 
   create_table "apartments", force: :cascade do |t|
     t.integer "price"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2022_09_13_155959) do
 
   create_table "owners", force: :cascade do |t|
     t.string "name"
+    t.string "email"
+    t.string "password"
   end
 
   create_table "portfolios", force: :cascade do |t|
