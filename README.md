@@ -4,6 +4,8 @@ by: Tomas Makaj & Thierry Yabre
 Project Goal: Create a version of Zillow with real estate displayed from our Backend with the Data we created using
 Ruby Active Record, Sinatra, Postman and SQLite.
 
+For our backend 
+
 We gave each real estate a price, location, details, image and like.
 
 We gave owners a name, email and password for login.
