@@ -7,27 +7,6 @@ We gave each real estate a price, location, details, image and like.
 We gave owners database a name, email and password for login.
 We gave our portfolio like, owner_id, house_id and apartment_id
 
-class Apartment < ActiveRecord::Base
-    has_many :portfolios
-    has_many :owners, through: :portfolios
-end
-
-class House < ActiveRecord::Base
-    has_many :portfolios
-    has_many :owners, through: :portfolio
-end
-
-class Owner < ActiveRecord::Base
-has_many :portfolios
-has_many :houses, through: :portfolios
-has_many :apartments, through: :portfolios
-end
-
-class Portfolio < ActiveRecord::Base
-    belongs_to :owner
-    has_many :houses
-    has_many :apartments
-end
 
 <img width="1074" alt="Screen Shot 2022-09-16 at 1 16 55 PM" src="https://user-images.githubusercontent.com/108154215/190693771-5f27dff6-c8ab-4ee2-91cd-26f3eae91e06.png">
 
