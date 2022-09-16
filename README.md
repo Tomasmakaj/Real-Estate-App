@@ -6,7 +6,7 @@ Ruby Active Record, Sinatra, Postman and SQLite.
 
 We gave each real estate a price, location, details, image and like.
 
-We gave owners database a name, email and password for login.
+We gave owners a name, email and password for login.
 
 We gave our portfolio a like, owner_id, house_id and apartment_id
 
