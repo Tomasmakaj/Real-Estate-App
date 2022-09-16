@@ -13,7 +13,7 @@ We gave our portfolio a like, owner_id, house_id and apartment_id
 
 <img width="1074" alt="Screen Shot 2022-09-16 at 1 16 55 PM" src="https://user-images.githubusercontent.com/108154215/190693771-5f27dff6-c8ab-4ee2-91cd-26f3eae91e06.png">
 
-rake db:seed created a schema which we used to intergrate our frontend & work with our SQLite.
+Schema
 
 <img width="392" alt="Screen Shot 2022-09-16 at 1 20 45 PM" src="https://user-images.githubusercontent.com/108154215/190698859-388a7201-2d30-48d4-80c3-690f862b4a68.png">
 
