@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import Like from "../like/Like.js"
+import BestItem from "../like/BestItem.js"
 import './Best.css'
 
 
@@ -8,7 +8,7 @@ const Best = ({house , apartment, filter}) => {
     let filteredArray = displayedArray.filter(e=>e.location.toLowerCase().includes(filter.toLowerCase()))
 
     
-
+    
     const [finalDisplay, setFinalDisplay] = useState([...filteredArray])
 
     useEffect(() => {
@@ -39,17 +39,7 @@ const Best = ({house , apartment, filter}) => {
                 <button onClick={handleApartmentClick} className='btn'>Apartments</button>
             </div>
             <div className='container'>
-                {finalDisplay.map((e)=>{
-            return (
-                <div>
-                    <img src={e.image}/>
-                    <p>${e.price}</p>
-                    <p>Location-  {e.location}</p>
-                    <p>Sqft-  {e.detail}</p>
-                    <Like />
-                </div>
-            )
-        })}
+                {finalDisplay.map((data,i)=><BestItem key={i} data={data}/>)}
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ class CreateHouses < ActiveRecord::Migration[6.1]
       t.string :location
       t.string :image
       t.boolean :like
+      t.boolean :is_house
     end
   end
 end

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import {BsFillHouseFill,BsFacebook,BsTwitter,BsApple} from 'react-icons/bs'
-import { NavLink } from 'react-router-dom'
+import { useNavigate, NavLink } from 'react-router-dom'
 // import {useNavigate} from "react-router-dom"
 
 import './Navbar.css'
@@ -13,6 +13,7 @@ const Navbar = ({handleLogin}) => {
     // const navigate = () => {
     //   console.log("sending u to login page ....");
     // }
+    const navigate = useNavigate()
     const[click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
     const[isShowingSignUp, setIsShowingSignUp] = useState (false)
@@ -25,6 +26,8 @@ const Navbar = ({handleLogin}) => {
 
     function handleSubmit(e){
       e.preventDefault()
+      setIsShowingSignUp(false)
+
       fetch("http://localhost:8080/login" , {
         method: 'POST',
         headers: {
@@ -33,13 +36,14 @@ const Navbar = ({handleLogin}) => {
         body: JSON.stringify(logInInfo)
       })
       .then((res) => res.json())
-      .then((data) => handleLogin(data))
+      .then((data) => {
+        handleLogin(data)})
       }
 
   return (
     <div className='navbar'>
         <div className='container'>
-        <h1><span><BsFillHouseFill />Lucid</span> Real Estate</h1>
+        <h1 style={{cursor:"pointer"}} onClick={()=>navigate("/")}><span><BsFillHouseFill />Lucid</span> Real Estate</h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li>
               <NavLink to="/">Home</NavLink>

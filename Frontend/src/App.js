@@ -3,8 +3,11 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero'
 import Best from './components/best/Best'
 import Footer from './components/footer/Footer'
+// import Portfolio from './components/portfolio/Portfolio'
 // import Like from './components/like/Like'
 import { Routes, Route } from "react-router-dom"
+// import portfolio from './components/portfolio/portfolio';
+
 
 function App() {
   const [house, setHouse] = useState ([])
@@ -15,14 +18,16 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:8080/houses")
     .then(res => res.json())
-    .then(data => setHouse(data))
+    .then(data => {
+      console.log(data); 
+      
+      setHouse(data)})
   }, []);
 
   useEffect(() => {
     fetch("http://localhost:8080/apartments")
     .then(res => res.json())
-    .then(data => setApartment(data))
-  }, []);
+    .then(data => setApartment(data))}, []);
 
 function handleLogin(ownerObject) {
   setCurrentOwner(ownerObject)
@@ -39,8 +44,7 @@ function handleLogin(ownerObject) {
         <Route path="/Home">
         </Route>
         
-        <Route path="/Portfolio">
-        </Route>
+        <Route path="/Portfolio" />
         
         <Route exact path="/">
         </Route>

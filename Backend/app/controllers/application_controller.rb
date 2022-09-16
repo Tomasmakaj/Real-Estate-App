@@ -35,15 +35,16 @@ class ApplicationController < Sinatra::Base
         patch '/houses/:id' do
             house = House.find(params[:id])
             house.update(
-                like: params[:liked]
+                like: !house.like
             )
+            puts params[:like]
             house.to_json
         end
 
         patch '/apartments/:id' do
             apartment = Apartment.find(params[:id])
             apartment.update(
-                like: params[:liked]
+                like: !apartment.like
             )
             apartment.to_json
         end

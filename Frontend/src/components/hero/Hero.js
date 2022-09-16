@@ -1,4 +1,4 @@
-import React from 'react'
+// import React, {useState} from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 
 
@@ -6,6 +6,9 @@ import {AiOutlineSearch} from 'react-icons/ai'
 import './Hero.css'
 
 const Hero = ({filter, setFilter}) => {
+
+    // function Search
+
   return (
     <div className='hero'>
         <div className='content'>
@@ -14,7 +17,7 @@ const Hero = ({filter, setFilter}) => {
             {/* <p>Dream Home</p>
             <p>Dream Apartment</p> */}
             
-            <form className="search">
+            <form className="search" onSubmit={(e)=>e.preventDefault()}>
                 <div>
                     <input type='text' placeholder='Enter Keyword..'  value={filter} onChange={(e)=> setFilter(e.target.value)}/>
 
@@ -24,7 +27,7 @@ const Hero = ({filter, setFilter}) => {
                     <label>Buy</label>
                     <input type='radio'/>
                     <label>Rent</label> */}
-                    <button type='submit'><AiOutlineSearch className='icon'/></button>
+                    <button><AiOutlineSearch className='icon'/></button>
                 </div>
             </form>
         </div>
