@@ -1,7 +1,7 @@
 Real Estate App
 
 Project Goal: Create a version of Zillow with real estate displayed from our Backend with the Data we created using
-Active Recordm,Sinatra and SQLite.
+Active Record,Sinatra and SQLite.
 
 We gave each real estate a price, location, details, image and like.
 
