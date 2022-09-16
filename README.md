@@ -10,7 +10,7 @@ We gave each real estate a price, location, details, image and like.
 
 We gave owners a name, email and password for login.
 
-We gave our portfolio a like, owner_id, house_id and apartment_id
+We gave our portfolio a like, owner_id, house_id and apartment_id.
 
 
 <img width="1074" alt="Screen Shot 2022-09-16 at 1 16 55 PM" src="https://user-images.githubusercontent.com/108154215/190693771-5f27dff6-c8ab-4ee2-91cd-26f3eae91e06.png">
