@@ -19,7 +19,7 @@ rake db:seed created a schema which we used to intergrate our frontend & work wi
 
 
 
-Front end created using ReactJs for & CSS.
+Front end created using ReactJs & CSS.
 Each component had its CSS stating from the NavBar, Hero Component, Best Component & Footer.
 In the footer we linked both our GitHub & Linkedin pages.
 
