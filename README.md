@@ -33,6 +33,6 @@ In the footer we linked both our GitHub & Linkedin pages.
 
 <img width="1280" alt="Screen Shot 2022-09-16 at 1 37 55 PM" src="https://user-images.githubusercontent.com/108154215/190699812-23d084c8-edb5-4a31-b258-f900dd465e01.png">
 
-Down below is our attached Component Tree
+Attached below is the Component Tree used to create this project.
 
 <img width="865" alt="screen_shot_2022-09-16_at_1 37 38_pm" src="https://user-images.githubusercontent.com/108154215/190699935-349d58c8-bc11-4fc7-87e8-918de1e16bc6.png">
